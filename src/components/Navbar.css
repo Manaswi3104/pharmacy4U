@@ -1,0 +1,46 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d7fbf1;
+  padding: 5px 35px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-size: 1.2rem;
+}
+
+.right ul {
+  display: flex;
+  align-items: center;
+}
+
+.right ul li {
+  list-style: none;
+  margin: 0px 30px;
+  font-size: 1.15rem;
+}
+
+.right ul li a {
+  text-decoration: none;
+  color: #02181f;
+}
+
+.right ul li a:hover {
+  color: #0f4453;
+}

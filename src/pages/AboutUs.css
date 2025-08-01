@@ -1,0 +1,17 @@
+/* src/pages/AboutUs.css */
+.about-container {
+  padding: 40px;
+}
+
+.about-container h3 {
+  margin-top: 20px;
+}
+
+.about-container ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.about-container li {
+  margin-bottom: 10px;
+}
