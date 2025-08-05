@@ -1,0 +1,38 @@
+.footer {
+  background-color: #040b3eff;
+  color: white;
+  position: fixed;
+  min-height: fit-content;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 18px;
+  z-index: 100;
+  padding: 20px 0;
+  
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+   gap: 32px; 
+ 
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+  
+  text-align: left;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: underline;
+  display: block;
+  margin: 4px 0;
+}

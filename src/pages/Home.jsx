@@ -1,5 +1,7 @@
 // src/pages/Home.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { footer } from '../components/footer';
 import './Home.css';
 
 function Home() {
