@@ -6,6 +6,30 @@
     <title>Pharmacy</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+function showDescription(text) {
+    const box = document.getElementById("description-box");
+    box.innerText = text;
+    box.style.display = "block";
+}
+</script>
+
+<script>
+function toggleDescription(card) {
+    // Hide all other descriptions
+    const allDescriptions = document.querySelectorAll(".category-content .description");
+    allDescriptions.forEach(desc => {
+        if (desc !== card.querySelector(".description")) {
+            desc.style.display = "none";
+        }
+    });
+
+    // Toggle the clicked one
+    const desc = card.querySelector(".description");
+    desc.style.display = desc.style.display === "none" ? "block" : "none";
+}
+</script>
+
 <body>
     <header>
         <div class="navbar">
@@ -88,10 +112,14 @@
     
     <div class="products"><h1>Products</h1></div>
     <div class="category">
-        <div class="category-content">
+        <div class="category-content" onclick="toggleDescription(this)">
             <img src="pharmacy_Assests/category1.webp" alt="">
             <h3>Must Haves</h3>
+            <p class="description" style="display: none;">Essential medicines and supplies everyone should have at home.</p>
+            <div id="description-box" style="display: none; margin-top: 20px; padding: 15px; background-color: #f3f3f3; border-radius: 10px; font-size: 16px; color: #333;"></div>
+
         </div>
+        
         <div class="category-content">
             <img src="pharmacy_Assests/category2.webp" alt="">
             <h3>Elderly Care</h3>
